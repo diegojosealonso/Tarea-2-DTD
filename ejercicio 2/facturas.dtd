@@ -1,11 +1,13 @@
-<!ELEMENT factura (cliente, fecha, productos)>
-<!ELEMENT cliente (nombre_cliente, direccion?, nif)>
-<!ELEMENT nombre_cliente (#PCDATA)>
-<!ELEMENT direccion (#PCDATA)>
-<!ELEMENT nif (#PCDATA)>
+<!ELEMENT factura (fecha, cliente, productos)>
+<!ATTLIST factura numero_factura PCDATA #REQUIRED>
 <!ELEMENT fecha (#PCDATA)>
+<!ELEMENT cliente (nombre_cliente, dni_cif, direccion?)>
+<!ELEMENT nombre_cliente (#PCDATA)>
+<!ELEMENT dni_cif (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
 <!ELEMENT productos (producto+)>
-<!ELEMENT producto (nombre_art, cantidad, precio)>
-<!ELEMENT nombre_art (#PCDATA)>
+<!ELEMENT producto (nombre_prod, cantidad, precio)>
+<!ELEMENT nombre_prod (#PCDATA)>
 <!ELEMENT cantidad (#PCDATA)>
 <!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio divisa (EUR | USD) "EUR">
