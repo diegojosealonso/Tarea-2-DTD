@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE calendario SYSTEM "calendario.dtd">
+<calendario>
+    <evento>
+        <titulo>DevFest</titulo>
+        <fecha>2026-11-09</fecha>
+        <descripcion>Qué gente más maja diciendo cosas majas.</descripcion>
+        <ubicacion>Las Setas</ubicacion>
+    </evento>
+
+    <evento>
+        <titulo>Django Girls</titulo>
+        <fecha>2026-10-22</fecha>
+        </evento>
+
+    <evento>
+        <titulo>Charla Álvaro</titulo>
+        <fecha>2026-02-09</fecha>
+        <ubicacion>En clase</ubicacion>
+    </evento>
+</calendario>

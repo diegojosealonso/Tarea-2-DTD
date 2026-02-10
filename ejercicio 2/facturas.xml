@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM "facturas.dtd">
+<facturas>
+    <cliente>
+        <nombre_cliente>Terry</nombre_cliente>
+        <nif>12345678</nif>
+    </cliente>
+    <fecha>2026-02-10</fecha>
+    <productos>
+        <producto>
+            <nombre_articulo>The Muppets Show Season 1</nombre_articulo>
+            <cantidad>1</cantidad>
+            <precio>25</precio>
+        </producto>        
+</facturas>

@@ -1,0 +1,49 @@
+<!ELEMENT>
+
+EMPTY
+ANY
+(#PCDATA)
+(elemento1, elemento2) secuencia
+(elemento1 | elemento2) eleccion
+
+<!ELEMENT libro (titulo, autor, precio)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+
+<!ELEMENT persona (nombre, (telefono | email))>
+
+? 0 o 1 vez
+* 0 o más veces
++ 1 o más veces 
+
+<!ELEMENT libro (titulo, autor+, capitulo*)>
+
+<!ATTLIST>
+
+CDATA
+ID
+IDREF
+IDREFS
+NMTOKEN
+NMTOKENS
+
+<!ATTLIST libro
+    id ID #REQUIRED
+    genero (aventura|fantasia|ciencia) "aventura"
+    idioma CDAT "español">
+
+<!ATTLIST autor
+    nacionalidad CDATA #IMPLIED
+    rol (principal|secundario) #FIXED "principal">
+
+<!ATTLIST libro
+    idioma CDATA #FIXED "español">
+
+<libro>
+    <titulo>Mi libro</titulo>
+</libro>
+
+<libro>
+    <titulo>Mi libro</titulo>
+</libro>

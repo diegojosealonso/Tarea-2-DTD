@@ -1,0 +1,6 @@
+<!ELEMENT calendario (evento+)>
+<!ELEMENT evento (titulo, fecha, descripcion?, ubicacion?)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT ubicacion (#PCDATA)>
